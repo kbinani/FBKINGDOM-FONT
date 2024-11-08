@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="959.99103mm"
+   width="1120.911mm"
    height="1000mm"
-   viewBox="0 0 959.99102 999.99999"
+   viewBox="0 0 1120.911 999.99999"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="Ga.svg"
+   sodipodi:docname="Ha.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,16 +23,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.17572075"
-     inkscape:cx="2176.7492"
-     inkscape:cy="2301.9478"
+     inkscape:zoom="0.12425334"
+     inkscape:cx="2663.9123"
+     inkscape:cy="1750.456"
      inkscape:current-layer="svg1" /><defs
      id="defs1" /><path
      id="path1"
      style="display:inline;stroke-width:0.873307"
      inkscape:label="a"
-     d="M 665.41003 132.49992 L 665.41003 295.08121 L 746.16376 295.08121 L 450.72443 867.50002 L 827.99132 867.50002 L 827.99132 295.08121 L 827.99132 136.53947 L 827.99132 132.49992 L 665.41003 132.49992 z M 779.52399 295.08121 L 797.93011 295.08121 L 797.93011 839.53532 L 498.51582 839.53532 L 779.52399 295.08121 z " /><path
-     id="rect5"
-     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.78662;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-     d="m 132,132.50001 v 734.99982 h 80.76407 20.00223 51.12703 L 626.62892,132.50001 H 555.49965 L 232.7663,824.60523 V 132.50001 Z"
-     inkscape:label="K" /></svg>
+     d="M 988.91095,136.53926 611.64176,867.49987 H 988.91095 Z M 958.84964,259.41984 V 839.53539 H 659.43396 Z" /><path
+     id="rect9"
+     style="display:inline;fill:#030000;fill-opacity:1;stroke:none;stroke-width:4.53282;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     d="M 132,132.50001 V 867.4998 h 38.58716 52.30066 383.40398 V 845.76616 H 222.88782 V 132.50001 Z"
+     inkscape:label="H" /></svg>

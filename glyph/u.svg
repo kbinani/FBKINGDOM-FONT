@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
+   width="594.83502mm"
+   height="1000mm"
+   viewBox="0 0 594.83502 999.99999"
    version="1.1"
-   viewBox="-10 0 600.51202 1000"
    id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="u.svg"
    xml:space="preserve"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   width="600.51202"
-   height="1000"
-   inkscape:export-filename="FBKINGDOM_a.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-     id="defs1" /><sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
      id="namedview1"
      pagecolor="#505050"
      bordercolor="#eeeeee"
@@ -24,14 +22,13 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.54793441"
-     inkscape:cx="385.9951"
-     inkscape:cy="479.07194"
-     inkscape:current-layer="layer4" /><g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="u"
-     style="display:inline"><path
-       id="rect3"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-       d="M 67,170.3457 V 825.91602 H 513.51172 V 170.3457 Z m 27.10156,37.42383 H 486.41211 V 788.49219 H 94.10156 Z" /></g></svg>
+     inkscape:document-units="mm"
+     inkscape:zoom="0.021965094"
+     inkscape:cx="7694.0258"
+     inkscape:cy="-22.76339"
+     inkscape:current-layer="svg1" /><defs
+     id="defs1" /><path
+     id="rect3"
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.58379;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     d="M 132.5,259.53776 V 743.8026 H 462.33515 V 259.53776 Z m 20.01944,27.6447 H 442.31685 V 716.15795 H 152.51944 Z"
+     inkscape:label="u" /></svg>

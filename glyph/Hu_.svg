@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="957.396mm"
+   width="909.60303mm"
    height="1000mm"
-   viewBox="0 0 957.39599 999.99999"
+   viewBox="0 0 909.60302 999.99999"
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="Ro.svg"
+   sodipodi:docname="Hu.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,16 +23,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.062126668"
-     inkscape:cx="2671.9605"
-     inkscape:cy="2599.5278"
+     inkscape:zoom="0.12425334"
+     inkscape:cx="2213.2202"
+     inkscape:cy="1943.6097"
      inkscape:current-layer="svg1" /><defs
      id="defs1" /><path
-     id="path4-0"
-     style="display:inline;fill:#010000;fill-opacity:1;stroke:none;stroke-width:5.78662;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-     d="M 654.489,669.23618 A 170.90716,170.90716 0 0 1 483.5832,498.3304 170.90716,170.90716 0 0 1 654.489,327.4231 170.90716,170.90716 0 0 1 825.3963,498.3304 170.90716,170.90716 0 0 1 654.489,669.23618 Z m 0,-25.68535 A 145.22168,145.22168 0 0 0 799.7108,498.3304 145.22168,145.22168 0 0 0 654.489,353.1084 145.22168,145.22168 0 0 0 509.2686,498.3304 145.22168,145.22168 0 0 0 654.489,643.55083 Z"
-     inkscape:label="o" /><path
-     id="rect9-9"
+     id="rect3"
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.58379;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     d="m 447.76748,132.50001 v 484.26486 h 329.8352 V 132.50001 Z m 20.0195,27.64471 h 289.7974 v 428.97549 h -289.7974 z"
+     inkscape:label="u" /><path
+     id="rect9"
      style="display:inline;fill:#030000;fill-opacity:1;stroke:none;stroke-width:4.53282;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-     d="M 132,867.4998 V 132.50001 h 38.58704 52.30074 383.40391 v 21.73365 H 222.88778 V 867.4998 Z"
-     inkscape:label="R" /></svg>
+     d="M 132,132.50001 V 867.4998 h 38.58716 52.30066 383.40398 V 845.76616 H 222.88782 V 132.50001 Z"
+     inkscape:label="H" /></svg>
