@@ -310,3 +310,8 @@ i.right-align {
 i.justify-align {
   background-image: url(icons/justify.svg);
 }
+
+.fbkingdom {
+  font-family: FBKINGDOM-FONT;
+  font-size: 20px;
+}
