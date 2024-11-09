@@ -3,8 +3,6 @@
 	"version": "1.0.0",
 	"manifest_version": 3,
 	"permissions": [
-		"activeTab",
-		"scripting"
 	],
 	"description": "X(旧Twitter)のフォントを FBKINGDOM-FONT に置き換えます",
 	"content_scripts": [
@@ -12,7 +10,18 @@
 			"matches": [
 				"https://x.com/*"
 			],
-			"js": ["main.js"]
+			"css": ["style.css"]
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"*.otf",
+				"*.css"
+			],
+			"matches": [
+				"https://x.com/*"
+			]
 		}
 	]
 }

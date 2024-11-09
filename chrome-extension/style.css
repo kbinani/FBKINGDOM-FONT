@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'FBKINGDOM-FONT';
+  src: url('chrome-extension://__MSG_@@extension_id__/FBKINGDOM-FONT.otf');
+}
+
+* {
+  font-family: 'FBKINGDOM-FONT',"Segoe UI",Meiryo,system-ui,-apple-system,BlinkMacSystemFont,sans-serif !important;
+}
