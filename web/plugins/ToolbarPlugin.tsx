@@ -18,6 +18,7 @@ import {
   SELECTION_CHANGE_COMMAND,
   UNDO_COMMAND,
 } from 'lexical';
+import React from 'react';
 import {useCallback, useEffect, useRef, useState} from 'react';
 
 const LowPriority = 1;
