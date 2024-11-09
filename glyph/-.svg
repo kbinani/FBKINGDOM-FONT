@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
+   width="750.883mm"
+   height="1000mm"
+   viewBox="0 0 750.88299 999.99999"
    version="1.1"
-   viewBox="-10 0 1003.952 1000"
    id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="-.svg"
    xml:space="preserve"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   width="1003.952"
-   height="1000"
-   inkscape:export-filename="FBKINGDOM_a.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-     id="defs1"><style
-       id="style1">
-      .cls-1 {
-        fill: #b29b64;
-      }
-    </style></defs><sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
      id="namedview1"
      pagecolor="#505050"
      bordercolor="#eeeeee"
@@ -29,17 +22,15 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.27396721"
-     inkscape:cx="554.81093"
-     inkscape:cy="228.12949"
-     inkscape:current-layer="layer4" /><g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="u"
-     style="display:inline"><rect
-       style="fill:#000000;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-       id="rect5"
-       width="603.95178"
-       height="139.37349"
-       x="190"
-       y="429.71762" /></g></svg>
+     inkscape:document-units="mm"
+     inkscape:zoom="0.031063334"
+     inkscape:cx="13649.533"
+     inkscape:cy="2366.1337"
+     inkscape:current-layer="svg1" /><defs
+     id="defs1" /><rect
+     style="fill:#010000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     id="rect4"
+     width="458.88272"
+     height="97.951767"
+     x="146"
+     y="449.30048" /></svg>
