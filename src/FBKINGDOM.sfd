@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1730956758
-ModificationTime: 1731127280
+ModificationTime: 1731131644
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -42,20 +42,21 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
+Lookup: 4 0 1 "'liga' +ahluljBuVAhbVwAA lookup 1" { "'liga' +ahluljBuVAhbVwAA lookup 1-1"  } ['liga' ('DFLT' <'dflt' > 'hang' <'dflt' > 'kana' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-LangName: 1033
+LangName: 1033 "" "" "Regular"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 12331 19 14
+WinInfo: 12312 19 14
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65536 221
+BeginChars: 65536 223
 
 StartChar: uni3042
 Encoding: 12354 12354 0
@@ -1431,6 +1432,7 @@ SplineSet
  146 667.5 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF76 uniFF9E
 EndChar
 
 StartChar: uni304E
@@ -1474,6 +1476,7 @@ SplineSet
  467.759765625 -67.5 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF77 uniFF9E
 EndChar
 
 StartChar: uni3050
@@ -1511,6 +1514,7 @@ SplineSet
  146 667.5 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF78 uniFF9E
 EndChar
 
 StartChar: uni3052
@@ -1546,6 +1550,7 @@ SplineSet
  146 667.5 l 1x60
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF79 uniFF9E
 EndChar
 
 StartChar: uni3054
@@ -1584,6 +1589,7 @@ SplineSet
  450.03125 -67.5 l 1xfa
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF7A uniFF9E
 EndChar
 
 StartChar: uni3056
@@ -1623,6 +1629,7 @@ SplineSet
  146 667.5 l 1xa0
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF7B uniFF9E
 EndChar
 
 StartChar: uni3058
@@ -1669,6 +1676,7 @@ SplineSet
  484.708984375 274.201171875 l 1xdf
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF7C uniFF9E
 EndChar
 
 StartChar: uni305A
@@ -1709,6 +1717,7 @@ SplineSet
  146 667.5 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF7D uniFF9E
 EndChar
 
 StartChar: uni305C
@@ -1747,6 +1756,7 @@ SplineSet
  146 667.5 l 1xa0
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF7E uniFF9E
 EndChar
 
 StartChar: uni305E
@@ -1788,6 +1798,7 @@ SplineSet
  398.990234375 432.651367188 l 1xed
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF7F uniFF9E
 EndChar
 
 StartChar: uni3060
@@ -1825,6 +1836,7 @@ SplineSet
  341.787109375 254.556640625 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF80 uniFF9E
 EndChar
 
 StartChar: uni3062
@@ -1868,6 +1880,7 @@ SplineSet
  341.787109375 415.24609375 l 1xdf80
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF81 uniFF9E
 EndChar
 
 StartChar: uni3065
@@ -1905,6 +1918,7 @@ SplineSet
  668.211914062 535.571289062 l 1xde
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF82 uniFF9E
 EndChar
 
 StartChar: uni3067
@@ -1940,6 +1954,7 @@ SplineSet
  532.990234375 639.53515625 l 1xb8
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF83 uniFF9E
 EndChar
 
 StartChar: uni3069
@@ -1978,6 +1993,7 @@ SplineSet
  341.787109375 415.168945312 l 1xef
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF84 uniFF9E
 EndChar
 
 StartChar: uni3070
@@ -2014,6 +2030,7 @@ SplineSet
  146 667.5 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF8A uniFF9E
 EndChar
 
 StartChar: uni3073
@@ -2056,6 +2073,7 @@ SplineSet
  418.176757812 271.498046875 l 1
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF8B uniFF9E
 EndChar
 
 StartChar: uni3076
@@ -2092,6 +2110,7 @@ SplineSet
  146 667.5 l 1xdc
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF8C uniFF9E
 EndChar
 
 StartChar: uni3079
@@ -2126,6 +2145,7 @@ SplineSet
  146 667.5 l 1xb0
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF8D uniFF9E
 EndChar
 
 StartChar: uni307C
@@ -2163,6 +2183,7 @@ SplineSet
  306.340820312 417.18359375 l 1xef
 EndSplineSet
 Validated: 1
+Ligature2: "'liga' +ahluljBuVAhbVwAA lookup 1-1" uniFF8E uniFF9E
 EndChar
 
 StartChar: uni3093
@@ -4117,6 +4138,36 @@ LayerCount: 2
 Fore
 Refer: 62 12435 N 1 0 0 1 0 0 2
 Validated: 1
+EndChar
+
+StartChar: uniFF9E
+Encoding: 65438 65438 221
+Width: 454
+Flags: W
+HStem: 218.709 162.582<146 308.581>
+VStem: 146 162.581<218.709 381.291>
+LayerCount: 2
+Fore
+Refer: 222 12443 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: uni309B
+Encoding: 12443 12443 222
+Width: 454
+Flags: W
+HStem: 218.709 162.582<146 308.581>
+VStem: 146 162.581<218.709 381.291>
+LayerCount: 2
+Fore
+SplineSet
+146 218.708984375 m 1
+ 146 381.291015625 l 1
+ 308.581054688 381.291015625 l 1
+ 308.581054688 218.708984375 l 1
+ 146 218.708984375 l 1
+EndSplineSet
+Validated: 524289
 EndChar
 EndChars
 EndSplineFont
