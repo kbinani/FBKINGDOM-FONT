@@ -1,0 +1,29 @@
+name: Deploy Playground
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "playground-[0-9]+.[0-9]+.[0-9]+"
+jobs:
+  deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/playground-')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build
+        run: |
+          npm install
+          npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: './web/public'
+      - uses: actions/deploy-pages@v4
