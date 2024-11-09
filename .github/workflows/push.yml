@@ -1,8 +1,6 @@
 name: Deploy Playground
 on:
   push:
-    branches:
-      - main
     tags:
       - "playground-[0-9]+.[0-9]+.[0-9]+"
 jobs:
