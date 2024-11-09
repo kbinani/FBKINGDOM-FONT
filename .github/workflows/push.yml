@@ -23,6 +23,13 @@ jobs:
         run: |
           npm install
           npm run build
+      - uses: robinraju/release-downloader@v1
+        with:
+          latest: true
+          fileName: '*.otf'
+          out-file-path: 'web/public'
+      - run: |
+          mv web/public/*.otf web/public/FBKINGDOM-FONT.otf
       - uses: actions/upload-pages-artifact@v3
         with:
           path: './web/public'
