@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "fmt": "prettier --write 'web/*.tsx' 'web/public/*.css'",
+    "build": "esbuild web/main.tsx --bundle --outfile=web/public/main.js --minify --sourcemap",
+    "dev": "npm run build -- --servedir=web/public"
+  },
+  "dependencies": {
+    "@lexical/react": "^0.20.0",
+    "lexical": "^0.20.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "esbuild": "^0.24.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}
