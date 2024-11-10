@@ -7,20 +7,34 @@ jobs:
   release:
     permissions:
       contents: write
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Build
+      - name: build font
         run: |
           sudo apt install fontforge
           fontforge -lang=ff -c 'Open($1); Generate($2)' src/FBKINGDOM.sfd src/FBKINGDOM-FONT.otf
           cp src/FBKINGDOM-FONT.otf ./FBKINGDOM-FONT_${{ github.ref_name }}.otf
           cp src/FBKINGDOM-FONT.otf chrome-extension/FBKINGDOM-FONT.otf
           zip -j chrome-extension-x-fbkingdom-${{ github.ref_name }}.zip chrome-extension/manifest.json chrome-extension/style.css chrome-extension/FBKINGDOM-FONT.otf
-      - name: Release
-        uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v2
         with:
           prerelease: true
           files: |
             FBKINGDOM-FONT_${{ github.ref_name }}.otf
             chrome-extension-x-fbkingdom-${{ github.ref_name }}.zip
+      - uses: actions/configure-pages@v5
+      - name: build playground
+        run: |
+          npm install
+          npm run build
+          cp src/FBKINGDOM-FONT.otf playground/public/FBKINGDOM-FONT.otf
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: './playground/public'
+      - uses: actions/deploy-pages@v4
