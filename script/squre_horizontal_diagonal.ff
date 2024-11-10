@@ -99,6 +99,7 @@ ops[k++] = [0u3349, mi, ri]
 ops[k++] = [0u334b, me, ga]
 ops[k++] = [0u3352, ri, ra]
 ops[k++] = [0u3355, re, mu]
+ops[k++] = ["uni1F200", ho, ka]
 
 SelectNone()
 
@@ -158,6 +159,7 @@ while (i < SizeOf(ops))
     PasteWithOffset(width / 2, -$descent + height / 2)
 
     CenterInWidth()
+    AutoHint()
 
     SelectNone()
     Select(tmp)
