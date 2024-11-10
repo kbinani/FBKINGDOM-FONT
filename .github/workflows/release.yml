@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build
         run: |
-          apt install fontforge
+          sudo apt install fontforge
           fontforge -lang=ff -c 'Open($1); Generate($2)' src/FBKINGDOM.sfd src/FBKINGDOM-FONT.otf
           cp src/FBKINGDOM-FONT.otf ./FBKINGDOM-FONT_${{ github.ref_name }}.otf
           cp src/FBKINGDOM-FONT.otf chrome-extension/FBKINGDOM-FONT.otf
