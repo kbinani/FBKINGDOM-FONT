@@ -1,0 +1,213 @@
+a = 0u3042
+i = 0u3044
+u = 0u3045
+e = 0u3047
+o = 0u304a
+ka = 0u304b
+ki = 0u304d
+ku = 0u304f
+ke = 0u3051
+ko = 0u3053
+sa = 0u3055
+si = 0u3057
+su = 0u3059
+se = 0u305b
+so = 0u305d
+ta = 0u305f
+ti = 0u3061
+tu = 0u3064
+te = 0u3066
+to = 0u3068
+na = 0u306a
+ni = 0u306b
+nu = 0u306c
+ne = 0u306d
+no = 0u306e
+ha = 0u306f
+hi = 0u3072
+hu = 0u3075
+he = 0u3078
+ho = 0u307b
+ma = 0u307e
+mi = 0u307f
+mu = 0u3080
+me = 0u3081
+mo = 0u3082
+ya = 0u3084
+yu = 0u3086
+yo = 0u3088
+ra = 0u3089
+ri = 0u308a
+ru = 0u308b
+re = 0u308c
+ro = 0u308d
+wa = 0
+wo = 0
+n = 0u3093
+ga = 0u304c
+gi = 0u304e
+gu = 0u3050
+ge = 0u3052
+go = 0u3054
+za = 0u3056
+zi = 0u3058
+zu = 0u305a
+ze = 0u305c
+zo = 0u305e
+da = 0u3060
+di = 0u3062
+du = 0u3065
+de = 0u3067
+do = 0u3069
+ba = 0u3070
+bi = 0u3073
+bu = 0u3076
+be = 0u3079
+bo = 0u307c
+pa = 0
+pi = 0
+pi = 0
+pu = 0
+pe = 0
+po = 0
+long = "uni30FC.vert"
+
+tmp = 0u3040
+width = 1000
+height = 1000
+aheight = 735
+scale = 50
+space = 200
+
+k = 0
+ops = Array(1024)
+while (k < SizeOf(ops))
+  ops[k] = Array(1)
+  k++
+endloop
+k = 0
+ops[k++] = [0u3303, a, long, ru]
+ops[k++] = [0u3305, i, n, ti]
+ops[k++] = [0u3306, u, o, n]
+ops[k++] = [0u3309, o, n, su]
+ops[k++] = [0u330a, o, long, mu]
+ops[k++] = [0u330b, ka, i, ri]
+ops[k++] = [0u330e, ga, ro, n]
+ops[k++] = [0u330f, ga, n, ma]
+ops[k++] = [0u3311, gi, ni, long]
+ops[k++] = [0u3318, gu, ra, mu]
+ops[k++] = [0u331c, ke, long, su]
+ops[k++] = [0u331d, ko, ru, ti]
+ops[k++] = [0u331e, ko, long, po]
+ops[k++] = [0u3322, se, n, ti]
+ops[k++] = [0u3323, se, n, to]
+ops[k++] = [0u3324, da, long, su]
+ops[k++] = [0u3329, no, tu, to]
+ops[k++] = [0u332a, ha, i, tu]
+ops[k++] = [0u332c, pa, long, tu]
+ops[k++] = [0u332f, pi, ku, ru]
+ops[k++] = [0u3335, hu, ra, n]
+ops[k++] = [0u3338, pe, ni, hi]
+ops[k++] = [0u3339, he, ru, tu]
+ops[k++] = [0u333a, pe, n, su]
+ops[k++] = [0u333b, pe, long, zi]
+ops[k++] = [0u333c, be, long, ta]
+ops[k++] = [0u333e, bo, ru, to]
+ops[k++] = [0u3340, po, n, do]
+ops[k++] = [0u3341, ho, long, ru]
+ops[k++] = [0u3342, ho, long, n]
+ops[k++] = [0u3344, ma, i, ru]
+ops[k++] = [0u3345, ma, tu, ha]
+ops[k++] = [0u3346, ma, ru, ku]
+ops[k++] = [0u334e, ya, long, do]
+ops[k++] = [0u334f, ya, long, ru]
+ops[k++] = [0u3350, yu, a, n]
+ops[k++] = [0u3353, ru, pi, long]
+ops[k++] = [0u3357, wa, tu, to]
+
+
+Select(tmp)
+Clear()
+
+i = 0
+while (i < SizeOf(ops))
+  op = ops[i]
+  if (SizeOf(op) < 4)
+    break
+  endif
+  code = op[0]
+  name = "uni" + Strsub(ToString(code), 2) + ".vert"
+  first = op[1]
+  second = op[2]
+  last = op[3]
+  if (!((TypeOf(first) == "Integer" && first == 0) || (TypeOf(second) == "Integer" && second == 0) || (TypeOf(last) == "Integer" && last == 0)))
+    Select(name)
+    Clear()
+
+    Select(first)
+    info = GlyphInfo("BBox")
+    fx0 = info[0]
+    fy0 = info[1]
+    fx1 = info[2]
+    fy1 = info[3]
+    fheight = fy1 - fy0
+
+    Select(second)
+    info = GlyphInfo("BBox")
+    sx0 = info[0]
+    sy0 = info[1]
+    sx1 = info[2]
+    sy1 = info[3]
+    sheight = sy1 - sy0
+
+    Select(last)
+    info = GlyphInfo("BBox")
+    lx0 = info[0]
+    ly0 = info[1]
+    lx1 = info[2]
+    ly1 = info[3]
+    lheight = ly1 - ly0
+
+    right_width = fx1 - fx0
+    if (right_width < sx1 - sx0)
+      right_width = sx1 - sx0
+    endif
+    right_height = fheight + space + sheight
+
+    Select(first)
+    Copy()
+    Select(tmp)
+    dx = -fx0 + width / 2 + right_width / 2 - (fx1 - fx0) / 2 + space / 2
+    dy = -fy1 - $descent + height / 2 + right_height / 2
+    PasteWithOffset(dx, dy)
+
+    Select(second)
+    Copy()
+    Select(tmp)
+    dx = -sx0 + width / 2 + right_width / 2 - (sx1 - sx0) / 2 + space / 2
+    dy = -$descent - sy1 + height / 2 + right_height / 2 - fheight - space
+    PasteWithOffset(dx, dy)
+
+    cy = -$descent + height / 2 + right_height / 2 - (fy1 - fy0) / 2
+    Select(last)
+    Copy()
+    Select(tmp)
+    dx = -lx1 + width / 2 - space / 2
+    dy = -ly1 - $descent + height / 2 + right_height / 2
+    PasteWithOffset(dx, dy)
+
+    Scale(scale, scale, 0, -$descent + height / 2)
+    Copy()
+
+    Select(name)
+    Paste()
+    SetWidth(width)
+    CenterInWidth()
+    AutoHint()
+
+    Select(tmp)
+    Clear()
+  endif
+
+  i++
+endloop
