@@ -10,7 +10,6 @@ jobs:
       pages: write
       id-token: write
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/playground-')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

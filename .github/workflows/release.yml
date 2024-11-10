@@ -1,0 +1,26 @@
+name: Release
+on:
+  push:
+    tags:
+      - "v.[0-9]+.[0-9]+.[0-9]+"
+jobs:
+  release:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          apt install fontforge
+          fontforge -lang=ff -c 'Open($1); Generate($2)' src/FBKINGDOM.sfd src/FBKINGDOM-FONT.otf
+          cp src/FBKINGDOM-FONT.otf ./FBKINGDOM-FONT_${{ github.ref_name }}.otf
+          cp src/FBKINGDOM-FONT.otf chrome-extension/FBKINGDOM-FONT.otf
+          zip -j chrome-extension-x-fbkingdom-${{ github.ref_name }}.zip chrome-extension/manifest.json chrome-extension/style.css chrome-extension/FBKINGDOM-FONT.otf
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          prerelease: true
+          files: |
+            FBKINGDOM-FONT_${{ github.ref_name }}.otf
+            chrome-extension-x-fbkingdom-${{ github.ref_name }}.zip
