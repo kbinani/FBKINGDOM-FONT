@@ -1,0 +1,168 @@
+a = 0u3042
+i = 0u3044
+u = 0u3045
+e = 0u3047
+o = 0u304a
+ka = 0u304b
+ki = 0u304d
+ku = 0u304f
+ke = 0u3051
+ko = 0u3053
+sa = 0u3055
+si = 0u3057
+su = 0u3059
+se = 0u305b
+so = 0u305d
+ta = 0u305f
+ti = 0u3061
+tu = 0u3064
+te = 0u3066
+to = 0u3068
+na = 0u306a
+ni = 0u306b
+nu = 0u306c
+ne = 0u306d
+no = 0u306e
+ha = 0u306f
+hi = 0u3072
+hu = 0u3075
+he = 0u3078
+ho = 0u307b
+ma = 0u307e
+mi = 0u307f
+mu = 0u3080
+me = 0u3081
+mo = 0u3082
+ya = 0u3084
+yu = 0u3086
+yo = 0u3088
+ra = 0u3089
+ri = 0u308a
+ru = 0u308b
+re = 0u308c
+ro = 0u308d
+wa = 0
+wo = 0
+n = 0u3093
+ga = 0u304c
+gi = 0u304e
+gu = 0u3050
+ge = 0u3052
+go = 0u3054
+za = 0u3056
+zi = 0u3058
+zu = 0u305a
+ze = 0u305c
+zo = 0u305e
+da = 0u3060
+di = 0u3062
+du = 0u3065
+de = 0u3067
+do = 0u3069
+ba = 0u3070
+bi = 0u3073
+bu = 0u3076
+be = 0u3079
+bo = 0u307c
+pa = 0
+pi = 0
+pi = 0
+pu = 0
+pe = 0
+po = 0
+long = 0u30fc
+
+tmp = 0u3040
+width = 1000
+height = 1000
+scale = 50
+space = 200
+
+k = 0
+ops = Array(1024)
+while (k < SizeOf(ops))
+  ops[k] = Array(1)
+  k++
+endloop
+k = 0
+ops[k++] = [0u3310, gi, ga]
+ops[k++] = [0u3314, ki, ro]
+ops[k++] = [0u3325, de, si]
+ops[k++] = [0u3326, do, ru]
+ops[k++] = [0u3327, to, n]
+ops[k++] = [0u3328, na, no]
+ops[k++] = [0u3330, pi, ko]
+ops[k++] = [0u3331, bi, ru]
+ops[k++] = [0u3337, pe, so]
+ops[k++] = [0u333f, ho, n]
+ops[k++] = [0u3349, mi, ri]
+ops[k++] = [0u334b, me, ga]
+ops[k++] = [0u3352, ri, ra]
+ops[k++] = [0u3355, re, mu]
+
+SelectNone()
+
+Select(tmp)
+Clear()
+SelectNone()
+
+i = 0
+while (i < SizeOf(ops))
+  op = ops[i]
+  if (SizeOf(op) < 3)
+    break
+  endif
+  code = op[0]
+  first = op[1]
+  second = op[2]
+  if (first > 0 && second > 0)
+    SelectNone()
+    Select(code)
+    Clear()
+
+    SelectNone()
+    Select(first)
+    info = GlyphInfo("BBox")
+    fx0 = info[0]
+    fy0 = info[1]
+    fx1 = info[2]
+    fy1 = info[3]
+    Copy()
+    SelectNone()
+
+    Select(tmp)
+    PasteWithOffset(-fx1, -fy0 + space / 2)
+    Scale(scale, scale, 0, 0)
+    Copy()
+    Clear()
+    SelectNone()
+    Select(code)
+    PasteWithOffset(width / 2, -$descent + height / 2)
+
+    SelectNone()
+    Select(second)
+    info = GlyphInfo("BBox")
+    sx0 = info[0]
+    sy0 = info[1]
+    sx1 = info[2]
+    sy1 = info[3]
+    Copy()
+    SelectNone()
+
+    Select(tmp)
+    PasteWithOffset(-sx0, -fy1 - space / 2)
+    Scale(scale, scale, 0, 0)
+    Copy()
+    SelectNone()
+    Select(code)
+    PasteWithOffset(width / 2, -$descent + height / 2)
+
+    CenterInWidth()
+
+    SelectNone()
+    Select(tmp)
+    Clear()
+  endif
+
+  i++
+endloop
