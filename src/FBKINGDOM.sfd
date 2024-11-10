@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1730956758
-ModificationTime: 1731240660
+ModificationTime: 1731245335
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -53,11 +53,11 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 65398 19 13
+WinInfo: 19 19 13
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 346030 173015 115343 0 1048576 115343 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65631 377
+BeginChars: 65631 376
 
 StartChar: uni3042
 Encoding: 12354 12354 0
@@ -14328,22 +14328,6 @@ EndChar
 
 StartChar: uni30FC.vert
 Encoding: 65630 -1 375
-Width: 1000
-VStem: 451.024 97.9512<70.5586 529.441>
-LayerCount: 2
-Fore
-SplineSet
-548.975585938 70.55859375 m 1
- 451.024414062 70.55859375 l 1
- 451.024414062 529.44140625 l 1
- 548.975585938 529.44140625 l 1
- 548.975585938 70.55859375 l 1
-EndSplineSet
-Validated: 524289
-EndChar
-
-StartChar: slash
-Encoding: 47 47 376
 Width: 1000
 VStem: 451.024 97.9512<70.5586 529.441>
 LayerCount: 2
