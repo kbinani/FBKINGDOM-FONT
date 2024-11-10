@@ -25,10 +25,10 @@ jobs:
         with:
           latest: true
           fileName: '*.otf'
-          out-file-path: 'web/public'
+          out-file-path: 'playground/public'
       - run: |
-          mv web/public/*.otf web/public/FBKINGDOM-FONT.otf
+          mv playground/public/*.otf playground/public/FBKINGDOM-FONT.otf
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: './web/public'
+          path: './playground/public'
       - uses: actions/deploy-pages@v4

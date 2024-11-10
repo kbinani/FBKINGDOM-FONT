@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "fmt": "prettier --write 'web/*.tsx' 'web/public/*.css'",
-    "build": "esbuild web/main.tsx --bundle --outfile=web/public/main.js --minify --sourcemap",
-    "dev": "npm run build -- --servedir=web/public"
+    "fmt": "prettier --write 'playground/*.tsx' 'playground/public/*.css'",
+    "build": "esbuild playground/main.tsx --bundle --outfile=playground/public/main.js --minify --sourcemap",
+    "dev": "npm run build -- --servedir=playground/public"
   },
   "dependencies": {
     "@lexical/react": "^0.20.0",
