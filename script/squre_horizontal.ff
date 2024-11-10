@@ -85,6 +85,7 @@ while (k < SizeOf(ops))
   k++
 endloop
 k = 0
+ops[k++] = [0u3300, [a, pa], [long, to]]
 ops[k++] = [0u3301, [a, ru], [hu, a]]
 ops[k++] = [0u3302, [a, n], [pe, a]]
 ops[k++] = [0u3304, [i, ni], [n, gu]]
