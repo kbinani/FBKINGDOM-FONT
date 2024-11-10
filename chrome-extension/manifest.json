@@ -2,15 +2,14 @@
 	"name": "X-FBKINGDOM",
 	"version": "1.0.0",
 	"manifest_version": 3,
-	"permissions": [
-	],
 	"description": "X(旧Twitter)のフォントを FBKINGDOM-FONT に置き換えます",
 	"content_scripts": [
 		{
 			"matches": [
 				"https://x.com/*"
 			],
-			"css": ["style.css"]
+			"css": ["style.css"],
+			"run_at": "document_idle"
 		}
 	],
 	"web_accessible_resources": [
