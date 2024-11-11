@@ -20,7 +20,28 @@
 		background-size: auto 49.5px;
 		background-position: 9px 12px;
 	}
+	body.vertical div.preview {
+		writing-mode: vertical-rl;
+	}
 </style>
+<script type="text/javascript">
+	function onLoad() {
+		const input = document.getElementById("checkbox_vertical");
+		input.addEventListener("change", onVerticalChange);
+	}
+	window.addEventListener("load", onLoad);
+
+	function onVerticalChange(e) {
+		console.log(e);
+		const target = e.target;
+		const vertical = target.checked;
+		if (vertical) {
+			document.body.classList.add("vertical");
+		} else {
+			document.body.classList.remove("vertical");
+		}
+	}
+</script>
 </head>
 <body>
 comparison against teaser site parts
@@ -36,8 +57,10 @@ comparison against teaser site parts
 	<div style="background-image: url(glyph/h_sub_text_videos.svg);">びでおす</div>
 </div>
 <hr>
+<input id="checkbox_vertical" type="checkbox">vertical</input>
+<hr>
 kana and katakana
-<div id="preview">
+<div class="preview">
 	<div>あいうえお<span>あいうえお</span></div>
 	<div>アイウエオ<span>アイウエオ</span></div>
 	<div>かきくけこ<span>かきくけこ</span></div>
@@ -75,7 +98,7 @@ kana and katakana
 </div>
 <hr>
 half-width katakana
-<div>
+<div class="preview">
 	<div>ｱｲｳｴｵ<span>ｱｲｳｴｵ</span></div>
 	<div>ｶｷｸｹｺ<span>ｶｷｸｹｺ</span></div>
 	<div>ｻｼｽｾｿ<span>ｻｼｽｾｿ</span></div>
@@ -96,7 +119,7 @@ half-width katakana
 </div>
 <hr>
 enclosed kana
-<div>
+<div class="preview">
 	<div>㋐㋑㋒㋓㋔<span>㋐㋑㋒㋓㋔</span></div>
 	<div>㋕㋖㋗㋘㋙<span>㋕㋖㋗㋘㋙</span></div>
 	<div>㋚㋛㋜㋝㋞<span>㋚㋛㋜㋝㋞</span></div>
@@ -110,7 +133,7 @@ enclosed kana
 </div>
 <hr>
 ligature
-<div>
+<div class="preview">
 	<div>あ゙<span>あ゙</span></div>
 	<div>い゙<span>い゙</span></div>
 	<div>ゔ<span>ゔ</span></div>
@@ -121,6 +144,98 @@ ligature
 	<div>ヴ<span>ヴ</span></div>
 	<div>エ゙<span>エ゙</span></div>
 	<div>オ゙<span>オ゙</span></div>
+</div>
+<hr>
+squre glyphs
+<div class="preview">
+	<div>㌀<span>㌀</span></div>
+	<div>㌁<span>㌁</span></div>
+	<div>㌂<span>㌂</span></div>
+	<div>㌃<span>㌃</span></div>
+	<div>㌄<span>㌄</span></div>
+	<div>㌅<span>㌅</span></div>
+	<div>㌆<span>㌆</span></div>
+	<div>㌇<span>㌇</span></div>
+	<div>㌈<span>㌈</span></div>
+	<div>㌉<span>㌉</span></div>
+	<div>㌊<span>㌊</span></div>
+	<div>㌋<span>㌋</span></div>
+	<div>㌌<span>㌌</span></div>
+	<div>㌍<span>㌍</span></div>
+	<div>㌎<span>㌎</span></div>
+	<div>㌏<span>㌏</span></div>
+	<div>㌐<span>㌐</span></div>
+	<div>㌑<span>㌑</span></div>
+	<div>㌒<span>㌒</span></div>
+	<div>㌓<span>㌓</span></div>
+	<div>㌔<span>㌔</span></div>
+	<div>㌕<span>㌕</span></div>
+	<div>㌖<span>㌖</span></div>
+	<div>㌗<span>㌗</span></div>
+	<div>㌘<span>㌘</span></div>
+	<div>㌙<span>㌙</span></div>
+	<div>㌚<span>㌚</span></div>
+	<div>㌛<span>㌛</span></div>
+	<div>㌜<span>㌜</span></div>
+	<div>㌝<span>㌝</span></div>
+	<div>㌞<span>㌞</span></div>
+	<div>㌟<span>㌟</span></div>
+	<div>㌠<span>㌠</span></div>
+	<div>㌡<span>㌡</span></div>
+	<div>㌢<span>㌢</span></div>
+	<div>㌣<span>㌣</span></div>
+	<div>㌤<span>㌤</span></div>
+	<div>㌥<span>㌥</span></div>
+	<div>㌦<span>㌦</span></div>
+	<div>㌧<span>㌧</span></div>
+	<div>㌨<span>㌨</span></div>
+	<div>㌩<span>㌩</span></div>
+	<div>㌪<span>㌪</span></div>
+	<div>㌫<span>㌫</span></div>
+	<div>㌬<span>㌬</span></div>
+	<div>㌭<span>㌭</span></div>
+	<div>㌮<span>㌮</span></div>
+	<div>㌯<span>㌯</span></div>
+	<div>㌰<span>㌰</span></div>
+	<div>㌱<span>㌱</span></div>
+	<div>㌲<span>㌲</span></div>
+	<div>㌳<span>㌳</span></div>
+	<div>㌴<span>㌴</span></div>
+	<div>㌵<span>㌵</span></div>
+	<div>㌶<span>㌶</span></div>
+	<div>㌷<span>㌷</span></div>
+	<div>㌸<span>㌸</span></div>
+	<div>㌹<span>㌹</span></div>
+	<div>㌺<span>㌺</span></div>
+	<div>㌻<span>㌻</span></div>
+	<div>㌼<span>㌼</span></div>
+	<div>㌽<span>㌽</span></div>
+	<div>㌾<span>㌾</span></div>
+	<div>㌿<span>㌿</span></div>
+	<div>㍀<span>㍀</span></div>
+	<div>㍁<span>㍁</span></div>
+	<div>㍂<span>㍂</span></div>
+	<div>㍃<span>㍃</span></div>
+	<div>㍄<span>㍄</span></div>
+	<div>㍅<span>㍅</span></div>
+	<div>㍆<span>㍆</span></div>
+	<div>㍇<span>㍇</span></div>
+	<div>㍈<span>㍈</span></div>
+	<div>㍉<span>㍉</span></div>
+	<div>㍊<span>㍊</span></div>
+	<div>㍋<span>㍋</span></div>
+	<div>㍌<span>㍌</span></div>
+	<div>㍍<span>㍍</span></div>
+	<div>㍎<span>㍎</span></div>
+	<div>㍏<span>㍏</span></div>
+	<div>㍐<span>㍐</span></div>
+	<div>㍑<span>㍑</span></div>
+	<div>㍒<span>㍒</span></div>
+	<div>㍓<span>㍓</span></div>
+	<div>㍔<span>㍔</span></div>
+	<div>㍕<span>㍕</span></div>
+	<div>㍖<span>㍖</span></div>
+	<div>㍗<span>㍗</span></div>
 </div>
 </body>
 </html>
