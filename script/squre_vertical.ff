@@ -75,7 +75,9 @@ long = "uni30FC.vert"
 tmp = 0u3040
 width = 1000
 height = 1000
-aheight = 735
+atop = 667.5
+abottom = -67.5
+aheight = atop - abottom
 scale = 50
 space = 200
 
@@ -169,6 +171,12 @@ while (i < SizeOf(ops))
       y0 = info[1]
       x1 = info[2]
       y1 = info[3]
+      if (y0 > abottom)
+        y0 = abottom
+      endif
+      if (y1 < atop)
+        y1 = atop
+      endif
       if (max_width < x1 - x0)
         max_width = x1 - x0
       endif
@@ -176,7 +184,7 @@ while (i < SizeOf(ops))
       j++
     endloop
     total_height_with_spaces = total_height + space * (SizeOf(right) - 1)
-    scale_y = Real(aheight) / Real(total_height_with_spaces)
+    scale_y = aheight / Real(total_height_with_spaces)
     if (scale_y > 1)
       scale_y = 1
     endif
@@ -190,6 +198,12 @@ while (i < SizeOf(ops))
       y0 = info[1]
       x1 = info[2]
       y1 = info[3]
+      if (y0 > abottom)
+        y0 = abottom
+      endif
+      if (y1 < atop)
+        y1 = atop
+      endif
       Select(tmp)
       PasteWithOffset(-x0 + max_width / 2 - (x1 - x0) / 2 + space / 2, -y0 + y - (y1 - y0))
       y -= space + y1 - y0
@@ -212,6 +226,12 @@ while (i < SizeOf(ops))
       y0 = info[1]
       x1 = info[2]
       y1 = info[3]
+      if (y0 > abottom)
+        y0 = abottom
+      endif
+      if (y1 < atop)
+        y1 = atop
+      endif
       if (max_width < x1 - x0)
         max_width = x1 - x0
       endif
@@ -219,7 +239,7 @@ while (i < SizeOf(ops))
       j++
     endloop
     total_height_with_spaces = total_height + space * (SizeOf(left) - 1)
-    scale_y = Real(aheight) / Real(total_height_with_spaces)
+    scale_y = aheight / Real(total_height_with_spaces)
     if (scale_y > 1)
       scale_y = 1
     endif
@@ -233,6 +253,12 @@ while (i < SizeOf(ops))
       y0 = info[1]
       x1 = info[2]
       y1 = info[3]
+      if (y0 > abottom)
+        y0 = abottom
+      endif
+      if (y1 < atop)
+        y1 = atop
+      endif
       Select(tmp)
       PasteWithOffset(-x0 - max_width / 2 - (x1 - x0) / 2 - space / 2, -y0 + y - (y1 - y0))
       y -= space + y1 - y0

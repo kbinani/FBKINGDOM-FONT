@@ -75,6 +75,9 @@ long = 0u30fc
 tmp = 0u3040
 width = 1000
 height = 1000
+atop = 667.5
+abottom = -67.5
+aheight = atop - abottom
 scale = 50
 space = 200
 
@@ -170,6 +173,12 @@ while (i < SizeOf(ops))
       y0 = info[1]
       x1 = info[2]
       y1 = info[3]
+      if (y0 > abottom)
+        y0 = abottom
+      endif
+      if (y1 < atop)
+        y1 = atop
+      endif
       if (miny > y0)
         miny = y0
       endif
@@ -211,6 +220,12 @@ while (i < SizeOf(ops))
       y0 = info[1]
       x1 = info[2]
       y1 = info[3]
+      if (y0 > abottom)
+        y0 = abottom
+      endif
+      if (y1 < atop)
+        y1 = atop
+      endif
       if (maxy < y1)
         maxy = y1
       endif

@@ -75,7 +75,9 @@ long = "uni30FC.vert"
 tmp = 0u3040
 width = 1000
 height = 1000
-aheight = 735
+atop = 667.5
+abottom = -67.5
+aheight = atop - abottom
 scale = 50
 space = 200
 
@@ -150,6 +152,12 @@ while (i < SizeOf(ops))
     fy0 = info[1]
     fx1 = info[2]
     fy1 = info[3]
+    if (fy0 > abottom)
+      fy0 = abottom
+    endif
+    if (fy1 < atop)
+      fy1 = atop
+    endif
     fheight = fy1 - fy0
 
     Select(second)
@@ -158,6 +166,12 @@ while (i < SizeOf(ops))
     sy0 = info[1]
     sx1 = info[2]
     sy1 = info[3]
+    if (sy0 > abottom)
+      sy0 = abottom
+    endif
+    if (sy1 < atop)
+      sy1 = atop
+    endif
     sheight = sy1 - sy0
 
     Select(last)
@@ -166,6 +180,12 @@ while (i < SizeOf(ops))
     ly0 = info[1]
     lx1 = info[2]
     ly1 = info[3]
+    if (ly0 > abottom)
+      ly0 = abottom
+    endif
+    if (ly1 < atop)
+      ly1 = atop
+    endif
     lheight = ly1 - ly0
 
     right_width = fx1 - fx0
