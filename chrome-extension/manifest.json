@@ -1,26 +1,28 @@
 {
-	"name": "X-FBKINGDOM",
-	"version": "1.0.0",
-	"manifest_version": 3,
-	"description": "X(旧Twitter)のフォントを FBKINGDOM-FONT に置き換えます",
-	"content_scripts": [
-		{
-			"matches": [
-				"https://x.com/*"
-			],
-			"css": ["style.css"],
-			"run_at": "document_idle"
-		}
-	],
-	"web_accessible_resources": [
-		{
-			"resources": [
-				"*.otf",
-				"*.css"
-			],
-			"matches": [
-				"https://x.com/*"
-			]
-		}
-	]
+  "name": "X-FBKINGDOM",
+  "version": "__version__",
+  "manifest_version": 3,
+  "description": "X(旧Twitter)のフォントを FBKINGDOM-FONT に置き換えます",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.otf",
+        "*.css"
+      ],
+      "matches": [
+        "https://x.com/*"
+      ]
+    }
+  ]
 }
