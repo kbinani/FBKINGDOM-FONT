@@ -41,8 +41,8 @@ ri = 0u308a
 ru = 0u308b
 re = 0u308c
 ro = 0u308d
-wa = 0
-wo = 0
+wa = 0u308f
+wo = 0u3092
 n = 0u3093
 ga = 0u304c
 gi = 0u304e
@@ -64,12 +64,11 @@ bi = 0u3073
 bu = 0u3076
 be = 0u3079
 bo = 0u307c
-pa = 0
-pi = 0
-pi = 0
-pu = 0
-pe = 0
-po = 0
+pa = 0u3071
+pi = 0u3074
+pu = 0u3077
+pe = 0u307a
+po = 0u307d
 long = "uni30FC.vert"
 
 tmp = 0u3040
@@ -160,12 +159,17 @@ while (i < SizeOf(ops))
     SelectNone()
     Select(name)
     Clear()
+    complete = 1
 
     j = 0
     max_width = 0
     total_height = 0
-    while (j < SizeOf(right))
+    while (j < SizeOf(right) && complete == 1)
       Select(right[j])
+      count = GlyphInfo("PointCount")
+      if (count == 0)
+        complete = 0
+      endif
       info = GlyphInfo("BBox")
       x0 = info[0]
       y0 = info[1]
@@ -190,7 +194,7 @@ while (i < SizeOf(ops))
     endif
     y = -$descent + height / 2 + total_height_with_spaces / 2
     j = 0
-    while (j < SizeOf(right))
+    while (j < SizeOf(right) && complete == 1)
       Select(right[j])
       Copy()
       info = GlyphInfo("BBox")
@@ -219,8 +223,12 @@ while (i < SizeOf(ops))
     j = 0
     max_width = 0
     total_height = 0
-    while (j < SizeOf(left))
+    while (j < SizeOf(left) && complete == 1)
       Select(left[j])
+      count = GlyphInfo("PointCount")
+      if (count == 0)
+        complete = 0
+      endif
       info = GlyphInfo("BBox")
       x0 = info[0]
       y0 = info[1]
@@ -245,7 +253,7 @@ while (i < SizeOf(ops))
     endif
     y = -$descent + height / 2 + total_height_with_spaces / 2
     j = 0
-    while (j < SizeOf(left))
+    while (j < SizeOf(left) && complete == 1)
       Select(left[j])
       Copy()
       info = GlyphInfo("BBox")
@@ -273,6 +281,9 @@ while (i < SizeOf(ops))
     SetWidth(width)
     CenterInWidth()
     AutoHint()
+    if (complete == 0)
+      Clear()
+    endif
   endif
 
   i++

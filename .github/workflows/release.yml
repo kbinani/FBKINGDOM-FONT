@@ -18,8 +18,10 @@ jobs:
       - name: build font
         run: |
           sudo apt install fontforge
-          fontforge -lang=ff -c 'Open($1); Generate($2)' src/FBKINGDOM.sfd src/FBKINGDOM-FONT.otf
+          fontforge -lang=ff -c 'Open($1); Generate($2)' src/FBKINGDOM-FONT.sfd src/FBKINGDOM-FONT.otf
+          fontforge -lang=ff -c 'Open($1); Generate($2)' src/FBKINGDOM-FONT-predict.sfd src/FBKINGDOM-FONT-predict.otf
           cp src/FBKINGDOM-FONT.otf ./FBKINGDOM-FONT_${{ github.ref_name }}.otf
+          cp src/FBKINGDOM-FONT-predict.otf ./FBKINGDOM-FONT-predict_${{ github.ref_name }}.otf
           cp src/FBKINGDOM-FONT.otf chrome-extension/FBKINGDOM-FONT.otf
           version=$(echo ${{ github.ref_name }} | cut -c2-)
           sed "s/__version__/$version/g" --in-place chrome-extension/manifest.json
@@ -29,13 +31,14 @@ jobs:
           prerelease: true
           files: |
             FBKINGDOM-FONT_${{ github.ref_name }}.otf
+            FBKINGDOM-FONT-predict_${{ github.ref_name }}.otf
             chrome-extension-x-fbkingdom-${{ github.ref_name }}.zip
       - uses: actions/configure-pages@v5
       - name: build playground
         run: |
           npm install
           npm run build
-          cp src/FBKINGDOM-FONT.otf playground/public/FBKINGDOM-FONT.otf
+          cp src/FBKINGDOM-FONT-predict.otf playground/public/FBKINGDOM-FONT-predict.otf
       - uses: actions/upload-pages-artifact@v3
         with:
           path: './playground/public'

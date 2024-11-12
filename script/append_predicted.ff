@@ -1,0 +1,91 @@
+bearing = 146
+
+wa = 0x308f
+wi = 0x3090
+we = 0x3091
+wo = 0x3092
+pa = 0x3071
+pi = 0x3074
+pu = 0x3077
+pe = 0x307a
+po = 0x307d
+semi_voiced = 0x309c
+
+file = Array(65536)
+k = 0
+while (k < SizeOf(file))
+  file[k++] = 0
+endloop
+
+file[wa] = "Wa"
+file[wi] = "Wi"
+file[we] = "We"
+file[wo] = "Wo"
+file[pa] = "Pa"
+file[pi] = "Pi"
+file[pu] = "Pu"
+file[pe] = "Pe"
+file[po] = "Po"
+file[semi_voiced] = "゜"
+
+map = Array(65536)
+k = 0
+while (k < SizeOf(map))
+  map[k++] = 0
+endloop
+
+map[wa] = [0x308e, 0x30ee, 0x30ef, 0xff9c, 0x32fb]
+map[wi] = [0x30f0, 0x32fc]
+map[we] = [0x30f1, 0x32fd]
+map[wo] = [0x30f2, 0x32fe]
+map[pa] = [0x30d1]
+map[pi] = [0x30d4]
+map[pu] = [0x30d7]
+map[pe] = [0x30da]
+map[po] = [0x30dd]
+map[semi_voiced] = [0x309a, 0xff9f]
+
+SetFontNames("FBKINGDOM-FONT-predict", "FBKINGDOM-FONT-predict", "FBKINGDOM-FONT-predict")
+
+k = 0
+while (k < SizeOf(map))
+  name = file[k]
+  if (TypeOf(name) == "String")
+    code = k
+    Select(code)
+    Clear()
+    Import("../glyph/" + name + ".svg", 0, 64 + 8)
+    SetLBearing(bearing)
+    SetRBearing(bearing)
+    AutoHint()
+
+    target = map[k]
+    if (TypeOf(target) == "Array")
+        Select(code)
+        Copy()
+        j = 0
+        while (j < SizeOf(target))
+            Select(target[j])
+            Paste()
+            SetLBearing(bearing)
+            SetRBearing(bearing)
+            AutoHint()
+            j++
+        endloop
+    endif
+  endif
+  k++
+endloop
+
+# enclosed
+code = 0x32fb
+while (code <= 0x32fe)
+    Select(code)
+    SetWidth(1000)
+    CenterInWidth()
+    Scale(65)
+    Import("../glyph/enclosure.svg")
+    SetWidth(1000)
+    AutoHint()
+    code++
+endloop

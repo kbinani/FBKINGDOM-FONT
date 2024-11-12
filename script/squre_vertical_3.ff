@@ -41,8 +41,8 @@ ri = 0u308a
 ru = 0u308b
 re = 0u308c
 ro = 0u308d
-wa = 0
-wo = 0
+wa = 0u308f
+wo = 0u3092
 n = 0u3093
 ga = 0u304c
 gi = 0u304e
@@ -64,12 +64,11 @@ bi = 0u3073
 bu = 0u3076
 be = 0u3079
 bo = 0u307c
-pa = 0
-pi = 0
-pi = 0
-pu = 0
-pe = 0
-po = 0
+pa = 0u3071
+pi = 0u3074
+pu = 0u3077
+pe = 0u307a
+po = 0u307d
 long = "uni30FC.vert"
 
 tmp = 0u3040
@@ -145,8 +144,13 @@ while (i < SizeOf(ops))
   if (!((TypeOf(first) == "Integer" && first == 0) || (TypeOf(second) == "Integer" && second == 0) || (TypeOf(last) == "Integer" && last == 0)))
     Select(name)
     Clear()
+    complete = 1
 
     Select(first)
+    count = GlyphInfo("PointCount")
+    if (count == 0)
+      complete = 0
+    endif
     info = GlyphInfo("BBox")
     fx0 = info[0]
     fy0 = info[1]
@@ -161,6 +165,10 @@ while (i < SizeOf(ops))
     fheight = fy1 - fy0
 
     Select(second)
+    count = GlyphInfo("PointCount")
+    if (count == 0)
+      complete = 0
+    endif
     info = GlyphInfo("BBox")
     sx0 = info[0]
     sy0 = info[1]
@@ -175,6 +183,10 @@ while (i < SizeOf(ops))
     sheight = sy1 - sy0
 
     Select(last)
+    count = GlyphInfo("PointCount")
+    if (count == 0)
+      complete = 0
+    endif
     info = GlyphInfo("BBox")
     lx0 = info[0]
     ly0 = info[1]
@@ -224,6 +236,9 @@ while (i < SizeOf(ops))
     SetWidth(width)
     CenterInWidth()
     AutoHint()
+    if (complete == 0)
+      Clear()
+    endif
 
     Select(tmp)
     Clear()

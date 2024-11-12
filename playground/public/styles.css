@@ -7,15 +7,15 @@
  */
 
 @font-face {
-  font-family: "FBKINGDOM-FONT";
-  src: url(FBKINGDOM-FONT.otf);
+  font-family: "FBKINGDOM-FONT-predict";
+  src: url(FBKINGDOM-FONT-predict.otf);
 }
 
 body {
   margin: 0;
   background: #eee;
   font-family:
-    "FBKINGDOM-FONT",
+    "FBKINGDOM-FONT-predict",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -76,7 +76,7 @@ h1 {
 }
 
 .editor-inner {
-  font-family: "FBKINGDOM-FONT";
+  font-family: "FBKINGDOM-FONT-predict";
   background: #fff;
   position: relative;
 }
@@ -312,6 +312,6 @@ i.justify-align {
 }
 
 .fbkingdom {
-  font-family: FBKINGDOM-FONT;
+  font-family: FBKINGDOM-FONT-predict;
   font-size: 20px;
 }

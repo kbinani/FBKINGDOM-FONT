@@ -41,8 +41,8 @@ ri = 0u308a
 ru = 0u308b
 re = 0u308c
 ro = 0u308d
-wa = 0
-wo = 0
+wa = 0u308f
+wo = 0u3092
 n = 0u3093
 ga = 0u304c
 gi = 0u304e
@@ -64,12 +64,11 @@ bi = 0u3073
 bu = 0u3076
 be = 0u3079
 bo = 0u307c
-pa = 0
-pi = 0
-pi = 0
-pu = 0
-pe = 0
-po = 0
+pa = 0u3071
+pi = 0u3074
+pu = 0u3077
+pe = 0u307a
+po = 0u307d
 long = 0u30fc
 
 tmp = 0u3040
@@ -158,6 +157,7 @@ while (i < SizeOf(ops))
     j++
   endloop
   if (ok == 1)
+    complete = 1
     SelectNone()
     Select(code)
     Clear()
@@ -168,6 +168,10 @@ while (i < SizeOf(ops))
       SelectNone()
       c = upper[j]
       Select(c)
+      count = GlyphInfo("PointCount")
+      if (count == 0)
+        complete = 0
+      endif
       info = GlyphInfo("BBox")
       x0 = info[0]
       y0 = info[1]
@@ -215,6 +219,10 @@ while (i < SizeOf(ops))
       SelectNone()
       c = lower[j]
       Select(c)
+      count = GlyphInfo("PointCount")
+      if (count == 0)
+        complete = 0
+      endif
       info = GlyphInfo("BBox")
       x0 = info[0]
       y0 = info[1]
@@ -253,6 +261,10 @@ while (i < SizeOf(ops))
     SetWidth(width)
     CenterInWidth()
     AutoHint()
+
+    if (complete == 0)
+      Clear()
+    endif
 
     Select(tmp)
     Clear()
