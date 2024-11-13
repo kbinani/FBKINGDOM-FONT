@@ -24,7 +24,7 @@ jobs:
           cp src/FBKINGDOM-FONT-predict.otf ./FBKINGDOM-FONT-predict_${{ github.ref_name }}.otf
           cp src/FBKINGDOM-FONT.otf chrome-extension/FBKINGDOM-FONT.otf
           version=$(echo ${{ github.ref_name }} | cut -c2-)
-          sed "s/__version__/$version/g" --in-place chrome-extension/manifest.json
+          sed "s/12345678/$version/g" --in-place chrome-extension/manifest.json
           zip -j chrome-extension-x-fbkingdom-${{ github.ref_name }}.zip chrome-extension/manifest.json chrome-extension/style.css chrome-extension/FBKINGDOM-FONT.otf
       - uses: softprops/action-gh-release@v2
         with:
