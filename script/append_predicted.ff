@@ -45,8 +45,6 @@ map[pe] = [0x30da]
 map[po] = [0x30dd]
 map[semi_voiced] = [0x309a, 0xff9f]
 
-SetFontNames("FBKINGDOM-FONT-predict", "FBKINGDOM-FONT-predict", "FBKINGDOM-FONT-predict")
-
 k = 0
 while (k < SizeOf(map))
   name = file[k]
