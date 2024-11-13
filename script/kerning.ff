@@ -1,0 +1,155 @@
+a = 0x3042
+i = 0x3044
+u = 0x3045
+e = 0x3047
+o = 0x304a
+ka = 0x304b
+ki = 0x304d
+ku = 0x304f
+ke = 0x3051
+ko = 0x3053
+sa = 0x3055
+si = 0x3057
+su = 0x3059
+se = 0x305b
+so = 0x305d
+ta = 0x305f
+ti = 0x3061
+tu = 0x3064
+te = 0x3066
+to = 0x3068
+na = 0x306a
+ni = 0x306b
+nu = 0x306c
+ne = 0x306d
+no = 0x306e
+ha = 0x306f
+hi = 0x3072
+hu = 0x3075
+he = 0x3078
+ho = 0x307b
+ma = 0x307e
+mi = 0x307f
+mu = 0x3080
+me = 0x3081
+mo = 0x3082
+ya = 0x3084
+yu = 0x3086
+yo = 0x3088
+ra = 0x3089
+ri = 0x308a
+ru = 0x308b
+re = 0x308c
+ro = 0x308d
+wa = 0x308f
+wo = 0x3092
+n = 0x3093
+ga = 0x304c
+gi = 0x304e
+gu = 0x3050
+ge = 0x3052
+go = 0x3054
+za = 0x3056
+zi = 0x3058
+zu = 0x305a
+ze = 0x305c
+zo = 0x305e
+da = 0x3060
+di = 0x3062
+du = 0x3065
+de = 0x3067
+do = 0x3069
+ba = 0x3070
+bi = 0x3073
+bu = 0x3076
+be = 0x3079
+bo = 0x307c
+pa = 0x3071
+pi = 0x3074
+pu = 0x3077
+pe = 0x307a
+po = 0x307d
+long = 0x30fc
+
+katakana_offset = 96
+table_name = "kerning-0"
+
+first = Array(65536)
+i = 0
+while (i < SizeOf(first))
+  first[i] = 0
+  i++
+endloop
+
+S = [-130, sa, si, su, se, so, za, zi, zu, ze, zo]
+first[o] = S
+/*
+first[ko] = S
+first[go] = S
+first[so] = S
+first[zo] = S
+first[to] = S
+first[do] = S
+first[no] = S
+first[ho] = S
+first[bo] = S
+first[mo] = S
+first[yo] = S
+first[0x3087] = S # hiragana letter small yo
+first[ro] = S
+first[wo] = S
+*/
+first[o + katakana_offset] = S
+/*
+first[ko + katakana_offset] = S
+first[go + katakana_offset] = S
+first[so + katakana_offset] = S
+first[zo + katakana_offset] = S
+first[to + katakana_offset] = S
+first[do + katakana_offset] = S
+first[no + katakana_offset] = S
+first[ho + katakana_offset] = S
+first[bo + katakana_offset] = S
+first[mo + katakana_offset] = S
+first[yo + katakana_offset] = S
+first[0x30e7] = S # katakana letter small yo
+first[ro + katakana_offset] = S
+first[wo + katakana_offset] = S
+first[0x3049] = S
+first[0x3049 + katakana_offset] = S
+first[0x31f3] = S
+first[0x31f9] = S
+first[0x31ff] = S
+*/
+first[0xff6b] = S # half width katakana letter small o
+#first[0xff6e] = S # half width katakana letter small yo
+first[0xff75] = S # half width katakana letter o
+/*
+first[0xff7a] = S # half width katakana letter ko
+first[0xff7f] = S # half width katakana letter so
+first[0xff84] = S # half width katakana letter to
+first[0xff89] = S # half width katakana letter no
+first[0xff8e] = S # half width katakana letter ho
+first[0xff93] = S # half width katakana letter mo
+first[0xff96] = S # half width katakana letter yo
+first[0xff9b] = S # half width katakana letter ro
+*/
+first[long] = [-130, sa, si, su, se, so, za, zi, zu, ze, zo]
+first[0xff70] = first[long] # half width katakana-hiragana prolonged sound mark
+
+i = 0
+while (i < SizeOf(first))
+  op = first[i]
+  if (TypeOf(op) == "Array")
+    kerning = op[0]
+    Select(i)
+    j = 1
+    while (j < SizeOf(op))
+      second = op[j]
+      SetKern(second, kerning, table_name)
+      SetKern(second + katakana_offset, kerning, table_name)
+      j++
+    endloop
+  endif
+  i++
+endloop
