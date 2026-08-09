@@ -62,16 +62,3 @@ while (k < SizeOf(map))
   endif
   k++
 endloop
-
-# enclosed
-code = 0x32fb
-while (code <= 0x32fe)
-    Select(code)
-    SetWidth(1000)
-    CenterInWidth()
-    Scale(65)
-    Import("../glyph/enclosure.svg")
-    SetWidth(1000)
-    AutoHint()
-    code++
-endloop
