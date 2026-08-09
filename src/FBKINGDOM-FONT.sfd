@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1730956758
-ModificationTime: 1786297079
+ModificationTime: 1786297191
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -8967,7 +8967,6 @@ SplineSet
  521.001953125 -117.25 l 1
  521.001953125 250.25 l 1xffa0
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3310.vert
 EndChar
 
@@ -9024,7 +9023,6 @@ SplineSet
  567.09375 -117.25 l 1
  521.650390625 -117.25 l 1xff70
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3314.vert
 EndChar
 
@@ -9087,7 +9085,6 @@ SplineSet
  653.08203125 -106.32421875 l 1
  487.702148438 250.25 l 1
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3325.vert
 EndChar
 
@@ -9144,7 +9141,6 @@ SplineSet
  602.467773438 -117.25 l 1
  557.024414062 -117.25 l 1xf92e
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3326.vert
 EndChar
 
@@ -9192,7 +9188,6 @@ SplineSet
  659.397460938 -117.25 l 1
  613.954101562 -117.25 l 1xff70
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3327.vert
 EndChar
 
@@ -9243,7 +9238,6 @@ SplineSet
  569.58984375 -117.25 l 1
  519.20703125 -117.25 l 1xf7
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3328.vert
 EndChar
 
@@ -9304,7 +9298,6 @@ SplineSet
  582.717773438 -117.25 l 1
  537.274414062 -117.25 l 1xffee
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3331.vert
 EndChar
 
@@ -9351,7 +9344,6 @@ SplineSet
  617.897460938 -117.25 l 1
  572.454101562 -117.25 l 1xfee0
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni333F.vert
 EndChar
 
@@ -9413,7 +9405,6 @@ SplineSet
  549.936523438 -117.25 l 1
  504.493164062 -117.25 l 1xff78
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3349.vert
 EndChar
 
@@ -9468,7 +9459,6 @@ SplineSet
  536.501953125 -117.25 l 1
  536.501953125 250.25 l 1xfa
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni334B.vert
 EndChar
 
@@ -9522,7 +9512,6 @@ SplineSet
  565.955078125 -117.25 l 1
  520.51171875 -117.25 l 1xfec0
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3352.vert
 EndChar
 
@@ -9572,7 +9561,6 @@ SplineSet
  911.203125 236.427734375 l 1
  766.3046875 236.427734375 l 1
 EndSplineSet
-Validated: 1
 Substitution2: "'vert' Vertical Alternates lookup 1-1" uni3355.vert
 EndChar
 
@@ -11497,7 +11485,6 @@ SplineSet
  499.251953125 -117.25 l 1
  499.251953125 250.25 l 1xfd80
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3301.vert
