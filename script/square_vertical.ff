@@ -155,6 +155,9 @@ while (i < SizeOf(ops))
     endif
     j++
   endloop
+  if (!InFont(name))
+    ok = 0
+  endif
   if (ok == 1)
     SelectNone()
     Select(name)
