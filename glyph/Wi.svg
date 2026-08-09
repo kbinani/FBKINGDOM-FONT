@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1062.567mm"
+   width="1120.991mm"
    height="1000mm"
-   viewBox="0 0 1062.567 999.99999"
+   viewBox="0 0 1120.9909 999.99999"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    sodipodi:docname="Wi.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -24,24 +24,21 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.087860376"
-     inkscape:cx="2441.3736"
+     inkscape:cx="2452.7553"
      inkscape:cy="2771.4427"
      inkscape:current-layer="svg1" /><defs
-     id="defs1" /><g
-     id="g2"
-     transform="matrix(0.76552208,0,0,0.76552208,315.84408,118.66975)"
-     style="display:inline"
-     inkscape:label="i"><rect
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-       id="rect2"
-       width="121.30656"
-       height="614.27576"
-       x="591.37085"
-       y="363.91968" /><path
-       id="path2"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.55906;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-       d="M 652.02344,20.648438 A 150.98795,150.98795 0 0 0 501.03711,171.63672 150.98795,150.98795 0 0 0 652.02344,322.62305 150.98795,150.98795 0 0 0 803.01172,171.63672 150.98795,150.98795 0 0 0 652.02344,20.648438 Z m 0,29.68164 A 121.30656,121.30656 0 0 1 773.33008,171.63672 121.30656,121.30656 0 0 1 652.02344,292.94336 121.30656,121.30656 0 0 1 530.7168,171.63672 121.30656,121.30656 0 0 1 652.02344,50.330078 Z" /></g><path
-     id="rect9-0"
-     style="display:inline;fill:#030000;fill-opacity:1;stroke:none;stroke-width:4.53282;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-     d="M 606.29173,132.50001 V 867.4998 H 567.70468 515.40395 132 V 845.76615 H 515.40395 V 132.50001 Z"
-     inkscape:label="Y" /></svg>
+     id="defs1" /><rect
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.32672;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     id="rect2"
+     width="92.862846"
+     height="398.46399"
+     x="528.04053"
+     y="397.2583" /><path
+     id="path2"
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.78663;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     d="M 574.4714,134.47659 A 115.58461,115.58461 0 0 0 458.88803,250.06145 115.58461,115.58461 0 0 0 574.4714,365.64482 115.58461,115.58461 0 0 0 690.05627,250.06145 115.58461,115.58461 0 0 0 574.4714,134.47659 Z m 0,22.72195 a 92.86285,92.86285 0 0 1 92.86292,92.86291 92.86285,92.86285 0 0 1 -92.86292,92.86291 92.86285,92.86285 0 0 1 -92.86291,-92.86291 92.86285,92.86285 0 0 1 92.86291,-92.86291 z" /><path
+     id="rect9-9-1"
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.53282;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
+     d="m 132,132.5 v 734.99978 h 38.587 52.3008 l 794.0565,2e-4 V 132.5 h -90.888 V 845.76618 H 222.8878 V 132.5 Z"
+     inkscape:label="W"
+     sodipodi:nodetypes="ccccccccccc" /></svg>

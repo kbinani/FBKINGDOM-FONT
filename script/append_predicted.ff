@@ -1,9 +1,5 @@
 bearing = 146
 
-wa = 0x308f
-wi = 0x3090
-we = 0x3091
-wo = 0x3092
 pa = 0x3071
 pi = 0x3074
 pu = 0x3077
@@ -17,10 +13,6 @@ while (k < SizeOf(file))
   file[k++] = 0
 endloop
 
-file[wa] = "Wa"
-file[wi] = "Wi"
-file[we] = "We"
-file[wo] = "Wo"
 file[pa] = "Pa"
 file[pi] = "Pi"
 file[pu] = "Pu"

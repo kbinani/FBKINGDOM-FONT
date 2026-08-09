@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1148.944mm"
+   width="1120.991mm"
    height="1000mm"
-   viewBox="0 0 1148.944 999.99999"
+   viewBox="0 0 1120.991 999.99999"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    sodipodi:docname="We.svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -23,16 +23,12 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.087860376"
-     inkscape:cx="3147.0387"
-     inkscape:cy="1826.762"
+     inkscape:zoom="0.12425334"
+     inkscape:cx="3440.5515"
+     inkscape:cy="2708.1768"
      inkscape:current-layer="svg1" /><defs
      id="defs1" /><path
      id="path1-4"
      style="display:inline;stroke-width:0.873307"
      inkscape:label="e"
-     d="M 1016.9436,863.46059 639.67517,132.50001 H 1016.9436 Z M 986.88267,740.58002 V 160.46448 H 687.46699 Z" /><path
-     id="rect9-0"
-     style="display:inline;fill:#030000;fill-opacity:1;stroke:none;stroke-width:4.53282;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:13.9374"
-     d="M 606.29173,132.50001 V 867.4998 H 567.70468 515.40395 132 V 845.76615 H 515.40395 V 132.50001 Z"
-     inkscape:label="Y" /></svg>
+     d="M 132.00021 132.49992 L 132.00021 867.50002 L 170.587 867.50002 L 222.88769 867.50002 L 1016.9441 867.50002 L 1016.9441 132.49992 L 926.05614 132.49992 L 926.05614 845.76646 L 750.63067 845.76646 L 750.63067 132.49992 L 373.36222 132.49992 L 741.49841 845.76646 L 222.88769 845.76646 L 222.88769 132.49992 L 132.00021 132.49992 z M 421.15362 160.46462 L 720.56945 160.46462 L 720.56945 740.58012 L 421.15362 160.46462 z " /></svg>
