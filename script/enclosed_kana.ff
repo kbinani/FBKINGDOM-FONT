@@ -1,6 +1,7 @@
-a = Array(94)
+imax = 94
+a = Array(imax)
 i = 0
-while (i < 94)
+while (i < imax)
   a[i] = 0
   i++
 endloop
@@ -87,7 +88,10 @@ while (from <=0u3092) #を
   to++
 endloop
 
-imax = i
+if (i != imax)
+  Error("imax mismatch: expected=" + i + "; actual=" + imax)
+endif
+
 i = 0
 while (i < imax)
 	to=a[i]
