@@ -124,7 +124,11 @@ while (i < SizeOf(ops))
   endif
   first = op[1]
   second = op[2]
-  if (first > 0 && second > 0)
+  ok = 1
+  if (!InFont(name))
+    ok = 0
+  endif
+  if (ok == 1 && first > 0 && second > 0)
     SelectNone()
     Select(name)
     Clear()

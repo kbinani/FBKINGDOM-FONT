@@ -22,7 +22,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1730956758
-ModificationTime: 1786298011
+ModificationTime: 1786298176
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -12471,7 +12471,6 @@ SplineSet
  131.248046875 -117.25 l 1
  131.248046875 250.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3311.vert
@@ -12775,7 +12774,6 @@ SplineSet
  177.19140625 -117.25 l 1
  131.748046875 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3315.vert
@@ -14066,7 +14064,6 @@ SplineSet
  295.013671875 -106.32421875 l 1
  129.633789062 250.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3326.vert
@@ -14122,7 +14119,6 @@ SplineSet
  173.068359375 -117.25 l 1
  127.625 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3327.vert
@@ -14169,7 +14165,6 @@ SplineSet
  229.818359375 -117.25 l 1
  184.375 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3328.vert
@@ -14219,7 +14214,6 @@ SplineSet
  132.025390625 -117.25 l 1
  81.642578125 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3329.vert
@@ -14493,7 +14487,6 @@ SplineSet
  192.795898438 -117.25 l 1
  147.352539062 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3332.vert
@@ -15171,7 +15164,6 @@ SplineSet
  271.34375 -117.25 l 1
  225.900390625 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3341.vert
@@ -15825,7 +15817,6 @@ SplineSet
  159.799804688 -117.25 l 1
  114.356445312 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni334A.vert
@@ -15987,7 +15978,6 @@ SplineSet
  115.73046875 -117.25 l 1
  115.73046875 250.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni334C.vert
@@ -16467,7 +16457,6 @@ SplineSet
  185.186523438 -117.25 l 1
  139.743164062 -117.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3354.vert
@@ -16594,7 +16583,6 @@ SplineSet
  483.188476562 236.427734375 l 1
  338.290039062 236.427734375 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni3356.vert
@@ -16744,7 +16732,6 @@ SplineSet
  152.900390625 -117.25 l 1
  152.900390625 250.25 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni30FC.vert
