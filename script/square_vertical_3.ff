@@ -141,7 +141,11 @@ while (i < SizeOf(ops))
   first = op[1]
   second = op[2]
   last = op[3]
-  if (!((TypeOf(first) == "Integer" && first == 0) || (TypeOf(second) == "Integer" && second == 0) || (TypeOf(last) == "Integer" && last == 0)))
+  ok = 1
+  if (!InFont(name))
+    ok = 0
+  endif
+  if (ok == 1 && !((TypeOf(first) == "Integer" && first == 0) || (TypeOf(second) == "Integer" && second == 0) || (TypeOf(last) == "Integer" && last == 0)))
     Select(name)
     Clear()
     complete = 1
