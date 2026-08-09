@@ -78,8 +78,18 @@ while (from <=0u308d) #ろ
   to++
 endloop
 
+from = 0u308f #わ
+to = 0u32fb #㋻
+while (from <=0u3092) #を
+  a[i++] = to
+  a[i++] = from
+  from++
+  to++
+endloop
+
+imax = i
 i = 0
-while (i < 94)
+while (i < imax)
 	to=a[i]
 	from=a[i + 1]
 	if (from == 0 || to == 0)
