@@ -1,12 +1,10 @@
 code = 0x10005
 uni = 0u3300
 while (code < 0x1005d)
-  Select(code)
   name = "uni" + Strsub(ToString(uni), 2) + ".vert"
-  SetGlyphName(name)
+  "compat_set_name.ff"(code, name)
   code++
   uni++
 endloop
 
-Select(0x1005d)
-SetGlyphName("uni1F200.vert")
+"compat_set_name.ff"(0x1005d, "uni1F200.vert")

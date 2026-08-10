@@ -39,8 +39,11 @@ while (k < SizeOf(map))
   if (TypeOf(name) == "String")
     code = k
     Select(code)
-    Clear()
-    Import("../glyph/" + name + ".svg", 0, 64 + 8)
+    flag = 0
+    flag += 8 // Correct direction (PostScript)
+    flag += 16 // Remove anything currently present (works for SVG & EPS)
+    flag += 64 // Don’t scale images and SVGs to ascender height
+    Import("../glyph/" + name + ".svg", 0, flag)
     SetLBearing(bearing)
     SetRBearing(bearing)
     AutoHint()
@@ -48,10 +51,11 @@ while (k < SizeOf(map))
     target = map[k]
     if (TypeOf(target) == "Array")
         Select(code)
-        Copy()
+        CopyReference()
         j = 0
         while (j < SizeOf(target))
             Select(target[j])
+            Clear()
             Paste()
             SetLBearing(bearing)
             SetRBearing(bearing)
