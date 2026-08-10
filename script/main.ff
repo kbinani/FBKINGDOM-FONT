@@ -1,0 +1,21 @@
+is_full=0
+if ($argc > 1)
+  is_full=$argv[1]
+endif
+
+Print("is_full=" + is_full)
+
+"enclosed_kana.ff"()
+"setup_vert_glyph_names.ff"()
+"kerning.ff"()
+
+if (is_full == 1)
+  "append_predicted.ff"()
+endif
+
+"square_horizontal.ff"()
+"square_horizontal_3.ff"()
+"square_horizontal_diagonal.ff"()
+"square_vertical.ff"()
+"square_vertical_3.ff"()
+"square_vertical_diagonal.ff"()
